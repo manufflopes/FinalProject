@@ -1,0 +1,232 @@
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+
+
+}
+
+
+.page {
+    width: 21cm;
+    margin: 1cm auto;
+    /* background-color: white; */
+    padding: 1cm;
+    background-color: #ffdd8e;
+}
+
+
+
+/* Navigation Styles */
+nav {
+    background-color: #ecbf55;
+    color: black;
+    padding: 10px;
+    /* border-bottom: dotted black 2px; */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Align list items to the center */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Header Styles */
+
+
+.photo{
+    width: 110px;
+    height: 140px;
+    border: double white 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    background: linear-gradient(90deg, #ff66c4,#ffde59 );/* Path to the header image */
+    height: 210 px;
+}
+
+/* Adjusting text colors in the header */
+header h1 {
+    color: black; /* Change h1 text color to white */
+    padding: 16px;
+}
+header h4 {
+    color: black; /* Change h1 text color to white */
+    padding: 16px;
+}
+header h2 {
+    color: white; /* Change h1 text color to white */
+}
+
+/* Additional CSS to style the icons */
+h2 {
+    display: flex;
+    align-items: center;
+}
+
+h2 img {
+    width: 1em; /* Adjust as needed */
+    height: 1em; /* Adjust as needed */
+    margin-left: 0.5em; /* Adjust spacing between h2 text and icon */
+    vertical-align: middle; /* Align icon vertically with text */
+    max-width: 100%; /* Prevent icon from overflowing */
+    max-height: 100%; /* Prevent icon from overflowing */
+}
+
+header p {
+    color: white; /* Change the text color */
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.icon{
+    height: 20px;
+    width: 20px;
+    color: black;
+    margin-right: 15px;
+
+}
+
+.iconPage{
+    height: 80px;
+    width: 80px;
+    color: black;
+}
+/* Styles for the header information */
+.header-info {
+    flex-grow: 1;
+}
+
+.headerRightColumn{
+    border: none;
+}
+
+.infoText {
+    align-items: center;
+    margin-bottom:10px ;
+}
+
+.text{
+    align-items: center;
+}
+
+/* Styles for the container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Styles for the left column */
+.left-column {
+    width: 48%;
+    background-color: #ecbf55;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the right column */
+.right-column {
+    width: 48%;
+    background-color: #ecbf55;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.textCall{
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.textInfo{
+    justify-content: flex-start;
+}
+
+.list{
+    margin-left: 20px;
+}
+
+/* Add space between sections in left column */
+.left-column section {
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+/* Add space between sections in right column */
+.right-column section {
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.left-column div,
+.right-column div {
+    margin-bottom: 20px; /* Ajuste o espaçamento entre as divs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    break-inside: avoid; /* Evita que um conteúdo se quebre entre as colunas */
+}
+
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+    pointer-events: none;
+    width: 100%; /* Preenche a largura da div */
+    height: 100%; /* Preenche a altura da div */
+    top: 0; /* Alinha ao topo da div */
+    left: 0; /* Alinha à esquerda da div */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    align-items: center;
+    box-sizing: border-box; /* Mantém o padding dentro da largura e altura */
+    /* text-transform: capitalize; */
+  
+}
+
+.web_content {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    /* text-transform: capitalize; */
+    position: relative; /* Estabelece um contexto de posicionamento para o .tooltip */
+    /* Restante do seu estilo */
+}
+
+.web_content:hover .tooltip {
+    display: block;
+    /* text-transform: capitalize; */
+}
